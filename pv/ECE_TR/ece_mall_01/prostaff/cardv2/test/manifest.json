@@ -15,8 +15,8 @@
   },
 
   "policy": {
-    "daily_check_time": "20:26",
-    "retry_start_time": "20:30",
+    "daily_check_time": "20:50",
+    "retry_start_time": "20:53",
     "retry_interval_sec": 60,
     "max_retry": 5,
     "window_minutes": 10,
