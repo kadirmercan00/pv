@@ -1,0 +1,25 @@
+{
+  "schema": "pv.ota.manifest.v1",
+  "namespace": "pv",
+  "customer_id": "ECE_TR",
+  "site_id": "ece_mall_01",
+  "module": "PROStaff",
+  "device_type": "cardv2",
+
+  "version": "1.0.4",
+  "build": 104,
+
+  "firmware": {
+    "url": "https://raw.githubusercontent.com/kadirmercan00/pv/main/pv/ECE_TR/ece_mall_01/prostaff/cardv2/test/firmware.bin",
+    "sha256": ""
+  },
+
+  "policy": {
+    "daily_check_time": "15:32",
+    "retry_start_time": "15:33",
+    "retry_interval_sec": 60,
+    "max_retry": 5,
+    "window_minutes": 10,
+    "lock_until_next_day_on_fail": true
+  }
+}
