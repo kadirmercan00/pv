@@ -1,7 +1,7 @@
 {
-  "version": "1.0.5",
+  "version": "1.0.4",
   "firmware": {
-    "url": "https://raw.githubusercontent.com/kadirmercan00/pv/main/pv/ECE_TR/ece_mall_01/prostaff/cardv2/011/v1.0.5.bin"
+    "url": "https://raw.githubusercontent.com/kadirmercan00/pv/main/pv/ECE_TR/ece_mall_01/prostaff/cardv2/011/v1.0.4.bin"
   },
   "policy": {
     "immediate": true
