@@ -1,6 +1,6 @@
-// ═══════════════════════════════════════════════════════════════════
+﻿// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // AUTOMATICALLY GENERATED MONOLITHIC SKETCH
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7735.h>
 #include <Arduino.h>
@@ -19,60 +19,60 @@
 
 // >>> FILE: include/features.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
-// FEATURE FLAGS - Compile-time özellik seçimi
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// FEATURE FLAGS - Compile-time Ã¶zellik seÃ§imi
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-// ─────────────────────── DEVICE TYPE ───────────────────────
-#define FEATURE_DISPLAY 1   // 0=ekransız, 1=TFT ekranlı
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ DEVICE TYPE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+#define FEATURE_DISPLAY 1   // 0=ekransÄ±z, 1=TFT ekranlÄ±
 #define FEATURE_BUTTONS 1   // 0=butonsuz, 1=4 buton
-#define FEATURE_VIBRATION 1 // 0=yok, 1=titreşim motoru
+#define FEATURE_VIBRATION 1 // 0=yok, 1=titreÅŸim motoru
 
-// ─────────────────────── CONNECTIVITY ───────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ CONNECTIVITY â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #define FEATURE_BLE 1       // BLE beacon tarama
 #define FEATURE_MQTT_AWS 0  // AWS IoT MQTT (TLS)
 #define FEATURE_MQTT_PROV 1 // PROVANCE MQTT (plaintext)
 
-// ─────────────────────── OPTIONAL ───────────────────────────
-#define FEATURE_OTA 0 // HTTPS OTA güncellemeleri
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ OPTIONAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+#define FEATURE_OTA 0 // HTTPS OTA gÃ¼ncellemeleri
 #define FEATURE_NTP 1 // NTP zaman senkronizasyonu
 
-// ─────────────────────── LANGUAGE ───────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ LANGUAGE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // "TR" veya "EN"
 #define DEVICE_LANG "EN"
 
-// ─────────────────────── DEBUG ──────────────────────────────
-#define DEBUG_SERIAL 1       // Serial debug çıktısı
-#define DEBUG_PAYLOADS 1     // MQTT payload logları
-#define DEBUG_STATUS_MS 5000 // Status log aralığı (ms)
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ DEBUG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+#define DEBUG_SERIAL 1       // Serial debug Ã§Ä±ktÄ±sÄ±
+#define DEBUG_PAYLOADS 1     // MQTT payload loglarÄ±
+#define DEBUG_STATUS_MS 5000 // Status log aralÄ±ÄŸÄ± (ms)
 
 // <<< FILE: include/features.h <<<
 
 // >>> FILE: src/config/config.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // CONFIGURATION - Single source of truth
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-// ─────────────────────── DEVICE INFO ────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ DEVICE INFO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #define CARD_ID "UP001"
 #define DEVICE_TYPE "cardv1"
 #define FW_VERSION "2.1.0"
 
-// ─────────────────────── PROJECT INFO ───────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ PROJECT INFO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #define CUSTOMER_ID "ECE_TR"
 #define SITE_ID "ece_mall_01"
 #define MODULE_NAME "prostaff"
 
-// ─────────────────────── AUTO-GENERATED ─────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ AUTO-GENERATED â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #define THINGNAME                                                              \
   "pv-" CUSTOMER_ID "-" SITE_ID "-" MODULE_NAME "-" DEVICE_TYPE "-" CARD_ID
 
-// ─────────────────────── WiFi (Fallback) ──────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ WiFi (Fallback) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #define WIFI_SSID_DEFAULT "Executive Office"
 #define WIFI_PASS_DEFAULT "H!ghTr44"
 
-// ─────────────────────── PROVANCE MQTT ──────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ PROVANCE MQTT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #define PROV_MQTT_SERVER "91.191.173.28"
 #define PROV_MQTT_PORT 1883
 #define PROV_MQTT_USER ""
@@ -85,7 +85,7 @@
 #define PROV_TOPIC "PROVANCE" // Main topic for publishing
 #define PROV_TOPIC_TASK "TASK"
 
-// ─────────────────────── HARDWARE PINS ──────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ HARDWARE PINS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // LED (WS2812B)
 #define LED_DATA_PIN 27
 #define LED_NUM_LEDS 2
@@ -125,13 +125,13 @@
 // Battery
 #define BATTERY_PIN 34
 
-// ─────────────────────── BLE CONFIG ─────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ BLE CONFIG â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #define BLE_SCAN_SECONDS 1
 #define BLE_SCAN_INTERVAL 100 // ms
 #define BLE_RSSI_MIN -85
 #define BLE_UUID_PREFIX "00000000-0000-0000-0000"
 
-// ─────────────────────── TIMING ─────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ TIMING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 #define MQTT_RECONNECT_MS 5000
 #define WIFI_RETRY_MS 10000
 
@@ -139,9 +139,9 @@
 
 // >>> FILE: src/core/debug.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // DEBUG MACROS
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 #if DEBUG_SERIAL
 #define DPRINT(x) Serial.print(x)
@@ -166,9 +166,9 @@
 
 // >>> FILE: include/lang/lang.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // LANGUAGE SYSTEM - Multi-language string interface
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
 enum class StringID {
   // Header
@@ -290,7 +290,7 @@ public:
     case StringID::REQUIRED:
       return "Gerekli: >";
     case StringID::GET_CLOSER:
-      return "Yaklasın!";
+      return "YaklasÄ±n!";
     case StringID::SYSTEM_ERROR:
       return "Sistem Hatasi!";
     default:
@@ -303,15 +303,15 @@ public:
 
 // >>> FILE: src/core/time_mgr.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // TIME MANAGER - NTP sync and timestamp utilities
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 #include <time.h>
 
 class TimeManager {
 public:
-  // NTP sunucusundan zamanı senkronize et
+  // NTP sunucusundan zamanÄ± senkronize et
   void begin(long gmtOffset = 10800, int daylightOffset = 0);
 
   // Zaman senkronize oldu mu?
@@ -326,7 +326,7 @@ public:
   // Unix timestamp
   time_t getUnixTime();
 
-  // Saat:Dakika string (ekran için)
+  // Saat:Dakika string (ekran iÃ§in)
   String getTimeString();
 
 private:
@@ -345,7 +345,7 @@ void TimeManager::begin(long gmtOffset, int daylightOffset) {
   LOG_TIME("Configuring NTP (GMT+%d)...\n", gmtOffset / 3600);
   configTime(gmtOffset, daylightOffset, "pool.ntp.org", "time.nist.gov");
 
-  // İlk sync'i bekle (max 10 saniye)
+  // Ä°lk sync'i bekle (max 10 saniye)
   int retries = 0;
   while (!isSynced() && retries < 20) {
     delay(500);
@@ -361,7 +361,7 @@ void TimeManager::begin(long gmtOffset, int daylightOffset) {
 
 bool TimeManager::isSynced() {
   time_t now = time(nullptr);
-  _synced = (now > 1700000000); // 2023-11-14'ten büyükse senkronize
+  _synced = (now > 1700000000); // 2023-11-14'ten bÃ¼yÃ¼kse senkronize
   return _synced;
 }
 
@@ -401,30 +401,30 @@ String TimeManager::getTimeString() {
 
 // >>> FILE: src/wifi/wifi_mgr.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // WIFI MANAGER - Connection management with backoff retry
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 #include <WiFi.h>
 
 class WifiManager {
 public:
-  // WiFi bağlantısını başlat (NVS'ten yükler veya default kullanır)
+  // WiFi baÄŸlantÄ±sÄ±nÄ± baÅŸlat (NVS'ten yÃ¼kler veya default kullanÄ±r)
   bool begin();
 
   // Yeni bilgileri kaydet
   void saveCredentials(const char *ssid, const char *password);
 
-  // Bağlı mı?
+  // BaÄŸlÄ± mÄ±?
   bool isConnected();
 
-  // Loop'ta çağrılacak - bağlantı kopmuşsa yeniden bağlan
+  // Loop'ta Ã§aÄŸrÄ±lacak - baÄŸlantÄ± kopmuÅŸsa yeniden baÄŸlan
   void tick();
 
   // IP adresi
   String getIP();
 
-  // Sinyal gücü
+  // Sinyal gÃ¼cÃ¼
   int getRSSI();
 
   // MAC adresi
@@ -475,7 +475,7 @@ bool WifiManager::begin() {
   WiFi.mode(WIFI_STA);
   WiFi.begin(_ssid, _password);
 
-  // BLE ile birlikte çalışabilmesi için modem sleep aktif
+  // BLE ile birlikte Ã§alÄ±ÅŸabilmesi iÃ§in modem sleep aktif
   esp_wifi_set_ps(WIFI_PS_MIN_MODEM);
 
   uint32_t startMs = millis();
@@ -514,7 +514,7 @@ void WifiManager::tick() {
 
   uint32_t now = millis();
   if (now < _retryAtMs) {
-    return; // Henüz retry zamanı gelmedi
+    return; // HenÃ¼z retry zamanÄ± gelmedi
   }
 
   LOG_WIFI("Reconnecting (backoff: %dms)...\n", _backoffMs);
@@ -535,20 +535,20 @@ String WifiManager::getMAC() { return WiFi.macAddress(); }
 
 // >>> FILE: src/led/led_status.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // LED STATUS - FastLED based status indicator
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 #include <FastLED.h>
 
 enum class LedState {
   LED_OFF,
-  LED_WIFI_CONNECTING, // Mavi yanıp sönen
-  LED_WIFI_CONNECTED,  // Yeşil
-  LED_MQTT_OK,         // Açık yeşil (MQTT_CONNECTED yerine)
-  LED_BEACON_PUBLISH,  // Mor (kısa flash)
-  LED_ERROR,           // Kırmızı
-  LED_OTA_PROGRESS     // Sarı yanıp sönen
+  LED_WIFI_CONNECTING, // Mavi yanÄ±p sÃ¶nen
+  LED_WIFI_CONNECTED,  // YeÅŸil
+  LED_MQTT_OK,         // AÃ§Ä±k yeÅŸil (MQTT_CONNECTED yerine)
+  LED_BEACON_PUBLISH,  // Mor (kÄ±sa flash)
+  LED_ERROR,           // KÄ±rmÄ±zÄ±
+  LED_OTA_PROGRESS     // SarÄ± yanÄ±p sÃ¶nen
 };
 
 class LedStatus {
@@ -558,7 +558,7 @@ public:
   // Durumu ayarla
   void setState(LedState state);
 
-  // Flash (kısa süre farklı renk)
+  // Flash (kÄ±sa sÃ¼re farklÄ± renk)
   void flash(CRGB color, uint16_t durationMs = 200);
 
   // Manuel renk ayarla
@@ -567,7 +567,7 @@ public:
   // Kapat
   void off();
 
-  // Loop'ta çağrılmalı (animasyonlar için)
+  // Loop'ta Ã§aÄŸrÄ±lmalÄ± (animasyonlar iÃ§in)
   void tick();
 
 private:
@@ -591,7 +591,7 @@ extern LedStatus ledStatus;
 
 LedStatus ledStatus;
 
-// Statik LED array (FastLED gereksinimleri için)
+// Statik LED array (FastLED gereksinimleri iÃ§in)
 static CRGB g_leds[10]; // Max 10 LED destekler
 
 void LedStatus::begin(uint8_t pin, uint8_t numLeds, uint8_t brightness) {
@@ -623,7 +623,7 @@ void LedStatus::setState(LedState state) {
 
   case LedState::LED_WIFI_CONNECTING:
     // User requested dark, but maybe keep blink for connecting?
-    // "led sadece görev geldiğindde yanacak" -> strict interpretation: OFF.
+    // "led sadece gÃ¶rev geldiÄŸindde yanacak" -> strict interpretation: OFF.
     // Let's keep it OFF for connecting too to be safe, or maybe very short
     // flash? Let's stick to OFF for now to strict compliance.
     off();
@@ -669,14 +669,14 @@ void LedStatus::off() {
 void LedStatus::tick() {
   uint32_t now = millis();
 
-  // Flash kontrolü
+  // Flash kontrolÃ¼
   if (_flashUntilMs > 0 && now > _flashUntilMs) {
     _flashUntilMs = 0;
     setColor(_previousColor);
     return;
   }
 
-  // Blink animasyonları
+  // Blink animasyonlarÄ±
   if (_currentState == LedState::LED_WIFI_CONNECTING ||
       _currentState == LedState::LED_OTA_PROGRESS) {
 
@@ -701,9 +701,9 @@ void LedStatus::tick() {
 
 // >>> FILE: src/mqtt/mqtt_prov.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // PROVANCE MQTT CLIENT - Plaintext MQTT for legacy system
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 #include <PubSubClient.h>
 #include <WiFiClient.h>
@@ -714,26 +714,26 @@ typedef void (*ProvMessageCallback)(const char *topic, const char *payload,
 
 class ProvMqttClient {
 public:
-  // Bağlantıyı başlat
+  // BaÄŸlantÄ±yÄ± baÅŸlat
   void begin(const char *server, uint16_t port, const char *user,
              const char *pass, const char *clientId);
 
   // Callback ayarla
   void setCallback(ProvMessageCallback cb);
 
-  // Bağlı mı?
+  // BaÄŸlÄ± mÄ±?
   bool isConnected();
 
-  // Bağlantıyı kontrol et ve yeniden bağlan
+  // BaÄŸlantÄ±yÄ± kontrol et ve yeniden baÄŸlan
   bool ensureConnected();
 
   // Topic'e abone ol
   void subscribe(const char *topic);
 
-  // Mesaj yayınla
+  // Mesaj yayÄ±nla
   bool publish(const char *topic, const char *payload);
 
-  // Loop'ta çağrılmalı
+  // Loop'ta Ã§aÄŸrÄ±lmalÄ±
   void loop();
 
 private:
@@ -838,7 +838,7 @@ bool ProvMqttClient::publish(const char *topic, const char *payload) {
   bool ok = _mqttClient.publish(topic, payload);
 
 #if DEBUG_PAYLOADS
-  LOG_MQTT("PROV → %s: %s\n", topic, payload);
+  LOG_MQTT("PROV â†’ %s: %s\n", topic, payload);
 #endif
 
   return ok;
@@ -863,9 +863,9 @@ void ProvMqttClient::_internalCallback(char *topic, byte *payload,
 
 // >>> FILE: src/ble/ble_scan.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // BLE SCANNER - FreeRTOS task for beacon scanning
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 
 struct BeaconData {
@@ -876,19 +876,19 @@ struct BeaconData {
 
 class BleScanner {
 public:
-  // Başlat (FreeRTOS task oluşturur)
+  // BaÅŸlat (FreeRTOS task oluÅŸturur)
   void begin();
 
-  // Son bulunan beacon'ı al (thread-safe)
+  // Son bulunan beacon'Ä± al (thread-safe)
   BeaconData getLatestBeacon();
 
-  // Beacon değişti mi? (değişim algılandıktan sonra false'a döner)
+  // Beacon deÄŸiÅŸti mi? (deÄŸiÅŸim algÄ±landÄ±ktan sonra false'a dÃ¶ner)
   bool hasChanged();
 
-  // Değişimi acknowledge et
+  // DeÄŸiÅŸimi acknowledge et
   void acknowledgeChange();
 
-  // Scanning'i durdur/başlat
+  // Scanning'i durdur/baÅŸlat
   void pause();
   void resume();
 
@@ -921,7 +921,7 @@ void BleScanner::begin() {
 
   _mutex = xSemaphoreCreateMutex();
 
-  // FreeRTOS task - Core 0'da çalışsın (WiFi Core 1'de)
+  // FreeRTOS task - Core 0'da Ã§alÄ±ÅŸsÄ±n (WiFi Core 1'de)
   xTaskCreatePinnedToCore(_scanTask, "BLE_Scan", 4096, this, 1, &_taskHandle,
                           0 // Core 0
   );
@@ -943,14 +943,14 @@ void BleScanner::_scanTask(void *param) {
       continue;
     }
 
-    // Scan başlat
+    // Scan baÅŸlat
     NimBLEScanResults results =
         pScan->getResults(BLE_SCAN_SECONDS * 1000, false);
 
     String bestUUID = "";
     int bestRSSI = -999;
 
-    // Sonuçları tara
+    // SonuÃ§larÄ± tara
     for (int i = 0; i < results.getCount(); i++) {
       const NimBLEAdvertisedDevice *dev = results.getDevice(i);
 
@@ -958,7 +958,7 @@ void BleScanner::_scanTask(void *param) {
         std::string uuid = dev->getServiceUUID().toString();
         String uuidStr = String(uuid.c_str());
 
-        // UUID prefix kontrolü
+        // UUID prefix kontrolÃ¼
         if (uuidStr.startsWith(BLE_UUID_PREFIX)) {
           int rssi = dev->getRSSI();
 
@@ -972,14 +972,14 @@ void BleScanner::_scanTask(void *param) {
 
     pScan->clearResults();
 
-    // Sonucu güncelle (thread-safe)
+    // Sonucu gÃ¼ncelle (thread-safe)
     if (xSemaphoreTake(self->_mutex, pdMS_TO_TICKS(100))) {
-      // Beacon değişimi kontrolü
+      // Beacon deÄŸiÅŸimi kontrolÃ¼
       if (bestUUID != self->_latestBeacon.uuid) {
         self->_previousBeacon = self->_latestBeacon;
         self->_changed = true;
 
-        LOG_BLE("Beacon changed: %s → %s (RSSI: %d)\n",
+        LOG_BLE("Beacon changed: %s â†’ %s (RSSI: %d)\n",
                 self->_previousBeacon.uuid.c_str(), bestUUID.c_str(), bestRSSI);
       }
 
@@ -990,7 +990,7 @@ void BleScanner::_scanTask(void *param) {
       xSemaphoreGive(self->_mutex);
     }
 
-    // Sonraki scan'e kadar bekle (30 saniye varsayılan)
+    // Sonraki scan'e kadar bekle (30 saniye varsayÄ±lan)
     vTaskDelay(pdMS_TO_TICKS(30000));
   }
 }
@@ -1030,26 +1030,26 @@ void BleScanner::resume() { _paused = false; }
 
 // >>> FILE: src/ota/ota_mgr.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // OTA MANAGER - HTTPS OTA updates from manifest
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 
 class OtaManager {
 public:
-  // OTA başlat
+  // OTA baÅŸlat
   void begin(const char *manifestUrl, const char *currentVersion);
 
-  // Güncelleme kontrolü (blocking)
+  // GÃ¼ncelleme kontrolÃ¼ (blocking)
   bool checkForUpdate();
 
-  // Güncelleme uygula (blocking, cihaz restart olur)
+  // GÃ¼ncelleme uygula (blocking, cihaz restart olur)
   void applyUpdate();
 
-  // Loop'ta çağrılmalı (periyodik kontrol için)
+  // Loop'ta Ã§aÄŸrÄ±lmalÄ± (periyodik kontrol iÃ§in)
   void tick();
 
-  // Güncelleme mevcut mu?
+  // GÃ¼ncelleme mevcut mu?
   bool updateAvailable();
 
   // Yeni versiyon bilgisi
@@ -1069,7 +1069,7 @@ private:
   uint32_t _firstCheckDelayMs = 60000; // 1 dakika
   bool _firstCheckDone = false;
 
-  // Semver karşılaştırma
+  // Semver karÅŸÄ±laÅŸtÄ±rma
   bool isNewerVersion(const String &remote, const String &local);
 };
 
@@ -1144,7 +1144,7 @@ bool OtaManager::checkForUpdate() {
     _newUrl = String(firmwareUrl);
     _updateAvailable = true;
 
-    LOG_OTA("Update available: %s → %s\n", _currentVersion, remoteVersion);
+    LOG_OTA("Update available: %s â†’ %s\n", _currentVersion, remoteVersion);
     return true;
   }
 
@@ -1188,7 +1188,7 @@ void OtaManager::applyUpdate() {
 void OtaManager::tick() {
   uint32_t now = millis();
 
-  // İlk kontrol gecikmesi
+  // Ä°lk kontrol gecikmesi
   if (!_firstCheckDone) {
     if (now < _firstCheckDelayMs) {
       return;
@@ -1237,9 +1237,9 @@ bool OtaManager::isNewerVersion(const String &remote, const String &local) {
 
 // >>> FILE: src/display/tft_mgr.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // TFT MANAGER - ST7735 Display with power management
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7735.h>
 
@@ -1252,7 +1252,7 @@ public:
   void ensureOn(uint32_t durationMs);
   bool isOn() { return _screenOn; }
 
-  void tick(); // Timeout kontrolü (loop'ta çağrılmalı)
+  void tick(); // Timeout kontrolÃ¼ (loop'ta Ã§aÄŸrÄ±lmalÄ±)
 
   void drawHeader(const char *deviceId);
   void drawBattery(float batteryPct);
@@ -1289,7 +1289,7 @@ void TftManager::begin() {
   _screenOn = false;
   _screenOnUntil = 0;
 
-  // TFT'yi oluştur (power açıldığında init edilecek)
+  // TFT'yi oluÅŸtur (power aÃ§Ä±ldÄ±ÄŸÄ±nda init edilecek)
   _tft = new Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
   LOG_BOOT("TFT initialized (power off)\n");
@@ -1395,9 +1395,9 @@ void TftManager::clearContent() {
 
 // >>> FILE: src/display/ui_screens.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // UI SCREENS - Task display functions
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 
 struct TaskData {
@@ -1426,7 +1426,7 @@ void showSystemError(float batteryPct);
 extern std::deque<TaskData> g_taskQueue;
 
 void showMainScreen(const char *deviceId, float batteryPct) {
-  tftManager.ensureOn(5000);
+  tftManager.ensureOn(25000);
 
   Adafruit_ST7735 &tft = tftManager.getTft();
   tft.fillScreen(TFT_BACKGROUND);
@@ -1434,7 +1434,7 @@ void showMainScreen(const char *deviceId, float batteryPct) {
   tftManager.drawHeader(deviceId);
   tftManager.drawBattery(batteryPct);
 
-  // "No Active Task" mesajı - Centered
+  // "No Active Task" mesajÄ± - Centered
   tft.setTextSize(TFT_FONT_SMALL);
   tft.setTextColor(0xFFFF); // White
 
@@ -1461,7 +1461,7 @@ void showMainScreen(const char *deviceId, float batteryPct) {
 }
 
 void showIncomingTask(const TaskData &task, float batteryPct) {
-  tftManager.ensureOn(30000); // Görev varken ekranı uzun süre açık tut
+  tftManager.ensureOn(90000); // GÃ¶rev varken ekranÄ± uzun sÃ¼re aÃ§Ä±k tut
 
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
@@ -1502,7 +1502,7 @@ void showIncomingTask(const TaskData &task, float batteryPct) {
 }
 
 void showAcceptedTask(const TaskData &task, float batteryPct) {
-  tftManager.ensureOn(5000);
+  tftManager.ensureOn(25000);
 
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
@@ -1550,7 +1550,7 @@ void showAcceptedTask(const TaskData &task, float batteryPct) {
 }
 
 void showMessage(const char *msg, uint16_t color, float batteryPct) {
-  tftManager.ensureOn(5000);
+  tftManager.ensureOn(25000);
 
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
@@ -1564,7 +1564,7 @@ void showMessage(const char *msg, uint16_t color, float batteryPct) {
 }
 
 void showWrongLocation(float batteryPct) {
-  tftManager.ensureOn(5000);
+  tftManager.ensureOn(25000);
 
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
@@ -1590,7 +1590,7 @@ void showWrongLocation(float batteryPct) {
 }
 
 void showWeakSignal(int currentRSSI, int requiredRSSI, float batteryPct) {
-  tftManager.ensureOn(5000);
+  tftManager.ensureOn(25000);
 
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
@@ -1622,7 +1622,7 @@ void showWeakSignal(int currentRSSI, int requiredRSSI, float batteryPct) {
 }
 
 void showSystemError(float batteryPct) {
-  tftManager.ensureOn(5000);
+  tftManager.ensureOn(25000);
 
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
@@ -1639,9 +1639,9 @@ void showSystemError(float batteryPct) {
 
 // >>> FILE: src/buttons/button_handler.h >>>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // BUTTON HANDLER - 4-button debounced input
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 
 enum class ButtonEvent { NONE, UP, DOWN, ACCEPT, REJECT };
@@ -1649,7 +1649,7 @@ enum class ButtonEvent { NONE, UP, DOWN, ACCEPT, REJECT };
 class ButtonHandler {
 public:
   void begin();
-  ButtonEvent poll(); // Non-blocking, loop'ta çağrılmalı
+  ButtonEvent poll(); // Non-blocking, loop'ta Ã§aÄŸrÄ±lmalÄ±
 
 private:
   uint32_t _lastAcceptDebounce = 0;
@@ -1713,9 +1713,9 @@ ButtonEvent ButtonHandler::poll() {
 
 // >>> FILE: src/main.cpp >>>
 
-// ═══════════════════════════════════════════════════════════════════
-// PERSONNEL CARD v2 - Modüler ESP32 Firmware
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// PERSONNEL CARD v2 - ModÃ¼ler ESP32 Firmware
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #include <Arduino.h>
 #include <deque>
 
@@ -1747,9 +1747,9 @@ ButtonEvent ButtonHandler::poll() {
 
 #include <ArduinoJson.h>
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // GLOBALS
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 static uint32_t g_lastStatusMs = 0;
 
 #if FEATURE_DISPLAY
@@ -1767,9 +1767,9 @@ bool g_viewingAcceptedTask = false;
 std::deque<TaskData> g_taskQueue;
 #endif
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // BATTERY (if enabled)
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #if FEATURE_DISPLAY
 void updateBattery() {
   const float R1 = 1000.0, R2 = 3300.0;
@@ -1796,9 +1796,9 @@ void updateBattery() {
 }
 #endif
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // PAYLOAD BUILDERS
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 String buildAwsPayload(const String &beaconId, int rssi) {
   StaticJsonDocument<384> doc;
 
@@ -1851,15 +1851,15 @@ String buildProvTaskStatus(const String &taskId, int status) {
   return output;
 }
 
-// ═════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // TASK CALLBACKS (PROVANCE MQTT)
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #if FEATURE_MQTT_PROV && FEATURE_DISPLAY
 void processWiFiCommand(const char *ssid, const char *pass) {
   LOG_MQTT("Received WiFi update command\n");
 
   // Show on screen
-  tftManager.ensureOn(5000);
+  tftManager.ensureOn(25000);
   Adafruit_ST7735 &tft = tftManager.getTft();
   tft.fillScreen(TFT_BACKGROUND);
   tftManager.drawHeader(CARD_ID);
@@ -1891,7 +1891,7 @@ void onProvMqttMessage(const char *topic, const char *payload, size_t length) {
   // Check for config commands (command field in JSON)
   const char *cmd = doc["command"];
   if (cmd) {
-    // deviceId kontrolü — sadece bu cihaza gelen komutu işle
+    // deviceId kontrolÃ¼ â€” sadece bu cihaza gelen komutu iÅŸle
     const char *targetId = doc["deviceId"];
     if (!targetId || strcmp(targetId, CARD_ID) != 0) {
       LOG_MQTT("[PROV] Ignored command for %s\n", targetId ? targetId : "null");
@@ -1908,7 +1908,7 @@ void onProvMqttMessage(const char *topic, const char *payload, size_t length) {
     return;
   }
 
-  // Task mesajı mı?
+  // Task mesajÄ± mÄ±?
   if (doc.containsKey("taskId") && doc.containsKey("section")) {
     // Check Device ID
     const char *targetDevice = doc["deviceId"];
@@ -1930,7 +1930,7 @@ void onProvMqttMessage(const char *topic, const char *payload, size_t length) {
       g_taskQueue.push_back(newTask);
       LOG_MQTT("[TASK] Queued task: %s (Queue: %d)\n", newTask.taskId.c_str(),
                g_taskQueue.size());
-      // Kuyruğa alındı bildirimi: LED + motor kısa (1sn)
+      // KuyruÄŸa alÄ±ndÄ± bildirimi: LED + motor kÄ±sa (1sn)
       ledStatus.setColor(CRGB::Blue);
 #if FEATURE_VIBRATION
       digitalWrite(VIBRATION_PIN, HIGH);
@@ -1945,18 +1945,18 @@ void onProvMqttMessage(const char *topic, const char *payload, size_t length) {
       g_taskAvailable = true;
       LOG_MQTT("[TASK] New task: %s\n", g_incomingTask.taskId.c_str());
 
-      // 1. Ekranı aç ve görevi göster (showIncomingTask kendi ensureOn'unu
-      // çağırır)
+      // 1. EkranÄ± aÃ§ ve gÃ¶revi gÃ¶ster (showIncomingTask kendi ensureOn'unu
+      // Ã§aÄŸÄ±rÄ±r)
       updateBattery();
       showIncomingTask(g_incomingTask, g_batteryPct);
 
-      // 2. LED + Motor birlikte başlat
+      // 2. LED + Motor birlikte baÅŸlat
       ledStatus.setColor(CRGB::Blue);
 #if FEATURE_VIBRATION
       digitalWrite(VIBRATION_PIN, HIGH);
 #endif
 
-      // 3. Hepsi birlikte 2 saniye çalışsın
+      // 3. Hepsi birlikte 2 saniye Ã§alÄ±ÅŸsÄ±n
       delay(2000);
 
       // 4. Motor kapat, LED kapat
@@ -1969,9 +1969,9 @@ void onProvMqttMessage(const char *topic, const char *payload, size_t length) {
 }
 #endif
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // BEACON PUBLISH
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 void publishBeaconIfChanged() {
 #if FEATURE_BLE
   if (!bleScanner.hasChanged()) {
@@ -2000,9 +2000,9 @@ void publishBeaconIfChanged() {
 #endif
 }
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // BUTTON HANDLING
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 #if FEATURE_BUTTONS && FEATURE_DISPLAY
 void handleButtons() {
   ButtonEvent evt = buttonHandler.poll();
@@ -2011,7 +2011,7 @@ void handleButtons() {
     return;
 
   updateBattery();
-  tftManager.ensureOn(5000);
+  tftManager.ensureOn(25000);
 
   switch (evt) {
   case ButtonEvent::UP:
@@ -2030,7 +2030,7 @@ void handleButtons() {
 
   case ButtonEvent::ACCEPT:
     if (g_viewingAcceptedTask && g_acceptedTask.taskId.length() > 0) {
-      // Task complete - beacon kontrolü
+      // Task complete - beacon kontrolÃ¼
       BeaconData beacon = bleScanner.getLatestBeacon();
 
       if (beacon.uuid != g_acceptedTask.beaconId) {
@@ -2118,9 +2118,9 @@ void handleButtons() {
 }
 #endif
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // STATUS LOG
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 void printStatus() {
 #if DEBUG_SERIAL
   uint32_t now = millis();
@@ -2150,9 +2150,9 @@ void printStatus() {
 #endif
 }
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // SETUP
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 void setup() {
   Serial.begin(115200);
   delay(500);
@@ -2172,19 +2172,19 @@ void setup() {
   }
 #endif
 
-  // LED başlat
+  // LED baÅŸlat
   ledStatus.begin(LED_DATA_PIN, LED_NUM_LEDS, LED_BRIGHTNESS);
   ledStatus.setState(LedState::LED_OFF);
   LOG_BOOT("LED initialized\n");
 
-// Display başlat
+// Display baÅŸlat
 #if FEATURE_DISPLAY
   pinMode(BATTERY_PIN, INPUT);
   tftManager.begin();
   LOG_BOOT("TFT initialized\n");
 #endif
 
-// Buttons başlat
+// Buttons baÅŸlat
 #if FEATURE_BUTTONS
   buttonHandler.begin();
 #endif
@@ -2196,7 +2196,7 @@ void setup() {
   LOG_BOOT("Vibration initialized\n");
 #endif
 
-  // WiFi bağlan
+  // WiFi baÄŸlan
   if (!wifiMgr.begin()) {
     LOG_BOOT("WiFi failed, restarting...\n");
     delay(3000);
@@ -2223,7 +2223,7 @@ void setup() {
 #if FEATURE_DISPLAY
   provMqtt.setCallback(onProvMqttMessage);
   provMqtt.subscribe(
-      PROV_TOPIC_TASK); // Tek topic: hem task hem config komutları
+      PROV_TOPIC_TASK); // Tek topic: hem task hem config komutlarÄ±
 #endif
 #endif
 
@@ -2248,14 +2248,14 @@ void setup() {
   LOG_BOOT("========================================\n\n");
 }
 
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 // LOOP
-// ═══════════════════════════════════════════════════════════════════
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 void loop() {
-  // WiFi yeniden bağlanma
+  // WiFi yeniden baÄŸlanma
   wifiMgr.tick();
 
-// MQTT bağlantıları
+// MQTT baÄŸlantÄ±larÄ±
 #if FEATURE_MQTT_AWS
   awsMqtt.ensureConnected();
   awsMqtt.loop();
@@ -2266,7 +2266,7 @@ void loop() {
   provMqtt.loop();
 #endif
 
-// MQTT bağlandıysa LED güncelle
+// MQTT baÄŸlandÄ±ysa LED gÃ¼ncelle
 #if FEATURE_MQTT_AWS
   if (awsMqtt.isConnected()) {
     ledStatus.setState(LedState::LED_MQTT_OK);
@@ -2278,12 +2278,12 @@ void loop() {
   // Beacon publish
   publishBeaconIfChanged();
 
-// OTA kontrolü
+// OTA kontrolÃ¼
 #if FEATURE_OTA
   otaMgr.tick();
 #endif
 
-  // LED animasyonları
+  // LED animasyonlarÄ±
   ledStatus.tick();
 
 // Display timeout
