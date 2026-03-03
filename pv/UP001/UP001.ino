@@ -115,7 +115,7 @@
 
 // Buttons
 #define BTN_ACCEPT 22
-#define BTN_REJECT 2
+#define BTN_REJECT 26
 #define BTN_UP 21
 #define BTN_DOWN 19
 
