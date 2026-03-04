@@ -1541,11 +1541,11 @@ void showWrongLocation(float batteryPct) {
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::WRONG_LOCATION));
-  y += TFT_LINE_HEIGHT + 5;
+  y = tft.getCursorY() + 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::GO_TO_CORRECT));
-  y += TFT_LINE_HEIGHT + 5;
+  y = tft.getCursorY() + 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::LOCATION_DOT));
@@ -1567,17 +1567,17 @@ void showWeakSignal(int currentRSSI, int requiredRSSI, float batteryPct) {
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::WEAK_SIGNAL));
-  y += TFT_LINE_HEIGHT + 5;
+  y = tft.getCursorY() + 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::RSSI));
   tft.print(currentRSSI);
-  y += TFT_LINE_HEIGHT + 5;
+  y = tft.getCursorY() + 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::REQUIRED));
   tft.print(requiredRSSI);
-  y += TFT_LINE_HEIGHT + 5;
+  y = tft.getCursorY() + 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::GET_CLOSER));
