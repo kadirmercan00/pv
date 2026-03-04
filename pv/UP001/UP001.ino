@@ -5,6 +5,7 @@
 #include <Arduino.h>
 #include <ArduinoJson.h>
 #include <FastLED.h>
+#include <Fonts/FreeSans9pt7b.h>
 #include <HTTPClient.h>
 #include <HTTPUpdate.h>
 #include <NimBLEDevice.h>
@@ -1533,22 +1534,25 @@ void showWrongLocation(float batteryPct) {
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
 
-  tft.setTextSize(TFT_FONT_MEDIUM);
+  tft.setFont(&FreeSans9pt7b);
+  tft.setTextSize(1);
   tft.setTextColor(TFT_REJECT_COLOR);
 
   int x = TFT_MARGIN;
-  int y = TFT_HEADER_HEIGHT + 8;
+  int y = TFT_HEADER_HEIGHT + 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::WRONG_LOCATION));
-  y = tft.getCursorY() + 20;
+  y += 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::GO_TO_CORRECT));
-  y = tft.getCursorY() + 20;
+  y += 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::LOCATION_DOT));
+
+  tft.setFont(NULL);
 
   tftManager.drawBattery(batteryPct);
 }
@@ -1559,28 +1563,31 @@ void showWeakSignal(int currentRSSI, int requiredRSSI, float batteryPct) {
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
 
-  tft.setTextSize(TFT_FONT_MEDIUM);
+  tft.setFont(&FreeSans9pt7b);
+  tft.setTextSize(1);
   tft.setTextColor(TFT_REJECT_COLOR);
 
   int x = TFT_MARGIN;
-  int y = TFT_HEADER_HEIGHT + 8;
+  int y = TFT_HEADER_HEIGHT + 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::WEAK_SIGNAL));
-  y = tft.getCursorY() + 20;
+  y += 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::RSSI));
   tft.print(currentRSSI);
-  y = tft.getCursorY() + 20;
+  y += 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::REQUIRED));
   tft.print(requiredRSSI);
-  y = tft.getCursorY() + 20;
+  y += 20;
 
   tft.setCursor(x, y);
   tft.print(currentLang->getText(StringID::GET_CLOSER));
+
+  tft.setFont(NULL);
 
   tftManager.drawBattery(batteryPct);
 }
@@ -1591,10 +1598,13 @@ void showSystemError(float batteryPct) {
   Adafruit_ST7735 &tft = tftManager.getTft();
   tftManager.clearContent();
 
-  tft.setTextSize(TFT_FONT_MEDIUM);
+  tft.setFont(&FreeSans9pt7b);
+  tft.setTextSize(1);
   tft.setTextColor(TFT_REJECT_COLOR);
-  tft.setCursor(TFT_MARGIN, TFT_HEADER_HEIGHT + 8);
+  tft.setCursor(TFT_MARGIN, TFT_HEADER_HEIGHT + 20);
   tft.print(currentLang->getText(StringID::SYSTEM_ERROR));
+
+  tft.setFont(NULL);
 
   tftManager.drawBattery(batteryPct);
 }

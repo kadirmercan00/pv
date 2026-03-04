@@ -1,0 +1,45 @@
+arduino-cli : In file included 
+from C:\Users\balck\AppData\Loc
+al\Arduino15\packages\esp32\too
+ls\esp32-libs\3.3.7/include/bt/
+include/esp32/include/esp_bt.h:
+16,
+At line:1 char:1
++ arduino-cli compile -b esp32:
+esp32:esp32 --board-options "Pa
+rtitionSc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo          :  
+   NotSpecified: (In file inc  
+  lude...de/esp_bt.h:16,:Str   
+ ing) [], RemoteException
+    + FullyQualifiedErrorId :  
+   NativeCommandError
+ 
+                 from C:\Users\
+balck\Documents\Arduino\librari
+es\NimBLE-Arduino\src/NimBLEDev
+ice.h:25,
+                 from C:\Users\
+balck\Desktop\pv\pv\UP001\UP001
+.ino:11:
+C:/Users/balck/AppData/Local/Ar
+duino15/packages/esp32/tools/es
+p32-libs/3.3.7/include/controll
+er/esp32/esp_bredr_cfg.h:18:95:
+ note: '#pragma message: BT: fo
+rcing BR/EDR max sync conn eff 
+to 1 (Bluedroid HFP requires SC
+O/eSCO)'
+   18 | #pragma message ("BT: f
+orcing BR/EDR max sync conn eff
+ to 1 (Bluedroid HFP requires S
+CO/eSCO)")
+      |                        
+                               
+                               
+         ^
+Sketch uses 1354146 bytes (68%) of program storage space. Maximum is 1966080 bytes.
+Global variables use 62028 bytes (18%) of dynamic memory, leaving 265652 bytes for local variables. Maximum is 327680 bytes.
