@@ -1,0 +1,22 @@
+arduino-cli : In file included from C:\Users\balck\AppData\Local\Arduino15\p
+ackages\esp32\tools\esp32-libs\3.3.7/include/bt/include/esp32/include/esp_bt
+.h:16,
+At line:1 char:1
++ arduino-cli compile -b esp32:esp32:esp32 --board-options "PartitionSc ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (In file include...de/esp_bt.h: 
+   16,:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                 from C:\Users\balck\Documents\Arduino\libraries\NimBLE-Ardu
+ino\src/NimBLEDevice.h:25,
+                 from C:\Users\balck\Desktop\pv\pv\UP001\UP001.ino:10:
+C:/Users/balck/AppData/Local/Arduino15/packages/esp32/tools/esp32-libs/3.3.7
+/include/controller/esp32/esp_bredr_cfg.h:18:95: note: '#pragma message: BT:
+ forcing BR/EDR max sync conn eff to 1 (Bluedroid HFP requires SCO/eSCO)'
+   18 | #pragma message ("BT: forcing BR/EDR max sync conn eff to 1 (Bluedro
+id HFP requires SCO/eSCO)")
+      |                                                                     
+                          ^
+Sketch uses 1352134 bytes (68%) of program storage space. Maximum is 1966080 bytes.
+Global variables use 62028 bytes (18%) of dynamic memory, leaving 265652 bytes for local variables. Maximum is 327680 bytes.

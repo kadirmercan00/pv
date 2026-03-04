@@ -1,0 +1,20 @@
+26: #define FEATURE_MQTT_AWS 0  // AWS IoT MQTT (TLS)
+1694: // DISABLE AWS if configured
+1695: #if FEATURE_MQTT_AWS
+1765: String buildAwsPayload(const String &beaconId, int rssi) {
+1950: #if FEATURE_MQTT_AWS
+1951:   if (awsMqtt.isConnected()) {
+1952:     String payload = buildAwsPayload(beacon.uuid, beacon.rssi);
+1953:     awsMqtt.publish(AWS_PUB_TOPIC, payload.c_str());
+2097: #if FEATURE_MQTT_AWS
+2098:   DPRINTF(" | AWS: %s", awsMqtt.isConnected() ? "OK" : "NO");
+2175: // AWS MQTT
+2176: #if FEATURE_MQTT_AWS
+2177:   awsMqtt.begin(AWS_IOT_ENDPOINT, AWS_MQTT_PORT, AWS_CERT_CA, AWS_CERT_CRT,
+2178:                 AWS_CERT_PRIVATE, THINGNAME);
+2179:   awsMqtt.subscribe(AWS_SUB_TOPIC);
+2222: #if FEATURE_MQTT_AWS
+2223:   awsMqtt.ensureConnected();
+2224:   awsMqtt.loop();
+2233: #if FEATURE_MQTT_AWS
+2234:   if (awsMqtt.isConnected()) {
